@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Code Pin Plugin",
+  "description": "Pin your favorite code",
+  "version": "1.0",
+ 
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "CodePin.html"
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  //"content_security_policy": "script-src 'self' https://assets.pinterest.com; object-src 'self'",
+//  "content_security_policy": "script-src 'unsafe-eval' http://api.grabz.it; object-src 'unsafe-eval'",
+  
+  "permissions": ["activeTab", "tabs"]
+}
